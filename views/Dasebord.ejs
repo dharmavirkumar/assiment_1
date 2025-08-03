@@ -1,0 +1,27 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaseBoard</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+ <%- include('partial/nav')%>   
+
+<h2>Welcome, <%= user.name %></h2>
+<p>Referral Code: <%= user.referralCode %></p>
+<p>Total Donations Raised: ₹<%= user.donationsRaised %></p>
+
+<h3>Rewards:</h3>
+<ul>
+  <li>🌟 Bronze Badge - Unlocked</li>
+  <li>🌟 Silver Badge - Locked</li>
+  <li>🌟 Gold Badge - Locked</li>
+</ul>
+
+</body>
+</html>

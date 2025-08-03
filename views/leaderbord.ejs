@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+   <%- include('partial/nav')%>
+
+<h2>Leaderboard</h2>
+<table border="1">
+  <tr><th>Rank</th><th>Name</th><th>Referral Code</th><th>Donations</th></tr>
+  <% leaderboard.forEach((item, index) => { %>
+    <tr>
+      <td><%= index + 1 %></td>
+      <td><%= item.name %></td>
+      <td><%= item.code %></td>
+      <td>₹<%= item.donations %></td>
+    </tr>
+  <% }) %>
+</table>
+
+</body>
+</html>

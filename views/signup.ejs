@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Sign_Up</h2>
+    <form action="/user/signup" method="post"> <!-- change this to POST if needed -->
+      <input type="text" name="email" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="cpassword" placeholder="Confrom_Password" required />
+
+      <button type="submit">SignUp</button>
+    </form>
+    <a href="/user/login">Already have account</a>
+  </div>
+
+</body>
+</html>
